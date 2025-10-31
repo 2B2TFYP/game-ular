@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Hilangkan scroll untuk fullscreen */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    /* Pastikan judul berada di atas video */
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    /* Warna emas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    position: relative;
+    z-index: 1;
+    /* Pastikan canvas berada di atas video */
+    border: 4px solid #ffcc00;
+    /* Warna emas */
+    background: rgba(0, 0, 0, 0.5);
+    /* Hitam transparan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    /* Membuat sudut membulat */
+}
+
+button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    /* Warna emas */
+    color: #1a1a1a;
+    /* Hitam */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #ffd633;
+    /* Warna emas lebih terang */
+    transform: scale(1.1);
+    /* Efek zoom saat hover */
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    /* Pastikan info berada di atas video */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#gameOver {
+    position: relative;
+    z-index: 1;
+    /* Pastikan teks Game Over berada di atas video */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: 20px;
+}
+
+/* Video latar belakang */
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Pastikan video menutupi seluruh layar */
+    z-index: -1;
+    /* Letakkan video di belakang elemen lainnya */
+}
